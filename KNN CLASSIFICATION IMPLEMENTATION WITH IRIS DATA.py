@@ -57,13 +57,13 @@ dataset = dataset1.iloc[:,:].values
 
 
 
-
+###Spliting data as test and train for classification
 from sklearn.model_selection import train_test_split
 x_train,x_test = train_test_split(dataset,test_size=20)
 
 
 
-
+###Running the classifier 
 y_test = []
 y_pred = []
 for i in range(len(x_test)):
@@ -76,11 +76,7 @@ for i in range(len(x_test)):
 from sklearn.metrics import confusion_matrix
 
 
-
-
 confusion_matrix(y_test,y_pred)
-
-
 
 
 #accuracy Percentage
