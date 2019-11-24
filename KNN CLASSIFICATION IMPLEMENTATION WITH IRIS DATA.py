@@ -83,6 +83,5 @@ confusion_matrix(y_test,y_pred)
 
 
 
-#prediction Percentage
-(3+7+8)*100/(20) #3+7+8+1+1 == 20
-
+#accuracy Percentage
+accuracy_score(y_test,y_pred)*100
