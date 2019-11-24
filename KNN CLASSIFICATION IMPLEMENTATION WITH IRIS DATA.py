@@ -73,7 +73,7 @@ for i in range(len(x_test)):
 
 
 
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import confusion_matrix,accuracy_score
 
 
 confusion_matrix(y_test,y_pred)
